@@ -4,7 +4,10 @@
     box-sizing: border-box;
 }
 body{
-  padding:30px 20px;
+}
+.p1{
+  width: 100%;
+  height: 100vh;
 }
 /* .design-container{
     border: none;
@@ -19,8 +22,12 @@ body{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    position: fixed;
+    top: 0px;
     height: 58px;
     padding: 0px 50px;
+    border-bottom: 2px inset;
+    background-color: #090A0F;
 }
 .name{
     width: fit-content;
@@ -305,7 +312,7 @@ body{
   left:0px;
   position: absolute;
   z-index: -5;
-  top:0;
+  top:0px;
   background-image : radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%) !important;
 }
 
@@ -331,7 +338,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center; 
-  font-size: 6.2rem;
+  font-size: 12.2rem;
   animation: pulsate 1.5s infinite alternate;  
   /* border: 0.2rem solid #fff; */
   /* border-radius: 2rem; */
@@ -373,4 +380,52 @@ body{
     0 0 80px #bc13fe;
 
 }
+}
+
+.main{
+  display: flex;
+  padding-left: 4rem;
+  width:100%;
+  height:100vh;
+  justify-content: space-between;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  margin-left: 4rem;
+  width:40%;
+  height: fit-content;
+  padding-top: 9rem;
+}
+h1{
+  font-size: 5.2rem;
+  font-family: 'Amatic SC', cursive;
+  background: -webkit-linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255), #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h3{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.image{
+  position: relative;
+  height: 100%;
+  width: 40%;
+}
+.tictac{   
+   width: 70%;
+  position: absolute;
+  top: 10vh;
+  right: 25vw;
+
+}
+.pong{
+  position: absolute;
+  background-image: url(../ping-pong.jpg);
+  width: 22rem;
+  height: 20rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 15vh;
+  right: 2vw;
 }
