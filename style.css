@@ -68,81 +68,7 @@ body{
      4px 4px 5px 0px rgba(0,0,0,.1);
     outline: none;
   }
-  /* *********topics*********** */
-  
-  .topics {
-    background-color: #f0ecfc;
-  background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
-    line-height: 42px;
-    padding: 0;
-    border: none;
-  }
-  .topics span {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-  .topics:before,
-  .topics:after {
-    position: absolute;
-    content: "";
-    right: 0;
-    bottom: 0;
-    background: #c797eb;
-    /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-      inset -4px -4px 6px 0 rgba(255,255,255,.5),
-      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
-    transition: all 0.3s ease;
-  }
-  .topics:before{
-     height: 0%;
-     width: 2px;
-  }
-  .topics:after {
-    width: 0%;
-    height: 2px;
-  }
-  .topics:hover:before {
-    height: 100%;
-  }
-  .topics:hover:after {
-    width: 100%;
-  }
-  .topics:hover{
-    background: transparent;
-  }
-  .topics span:hover{
-    color: #c797eb;
-  }
-  .topics span:before,
-  .topics span:after {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    background: #c797eb;
-    /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-      inset -4px -4px 6px 0 rgba(255,255,255,.5),
-      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
-    transition: all 0.3s ease;
-  }
-  .topics span:before {
-    width: 2px;
-    height: 0%;
-  }
-  .topics span:after {
-    height: 2px;
-    width: 0%;
-  }
-  .topics span:hover:before {
-    height: 100%;
-  }
-  .topics span:hover:after {
-    width: 100%;
-  }
+ 
   /* ***********Aboutme********************* */
   .Aboutme {
     background-color: #f0ecfc;
@@ -319,6 +245,10 @@ body{
 /***************************/
 
 .neonText {
+  width: 100%;
+  word-break: break-all;
+  word-wrap: break-word;
+  padding-top: 1.4em;
   color: #fff;
   text-shadow:
     0 0 7px #fff,
@@ -336,13 +266,13 @@ body{
   font-family: "Sacramento", sans-serif;
   background-color: transparent;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center; 
   font-size: 12.2rem;
   animation: pulsate 1.5s infinite alternate;  
   /* border: 0.2rem solid #fff; */
   /* border-radius: 2rem; */
-  padding: 0.4em;
+  /* padding: 0.4em; */
   /* box-shadow: 0 0 .2rem #fff,
             0 0 .2rem #fff,
             0 0 2rem #bc13fe,
@@ -392,20 +322,23 @@ body{
 .content{
   display: flex;
   flex-direction: column;
-  margin-left: 4rem;
+  margin-left: 2rem;
   width:40%;
   height: fit-content;
   padding-top: 9rem;
 }
 h1{
   font-size: 5.2rem;
-  font-family: 'Amatic SC', cursive;
-  background: -webkit-linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255), #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    font-family: 'Amatic SC', cursive;
+    background: -webkit-linear-gradient(rgb(255, 255, 255),rgb(119 193 245), #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 h3{
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(187, 216, 241);
 }
 .image{
   position: relative;
@@ -413,19 +346,22 @@ h3{
   width: 40%;
 }
 .tictac{   
-   width: 70%;
+  cursor: pointer;
+   width: 74%;
   position: absolute;
   top: 10vh;
-  right: 25vw;
+  right: 26vw;
 
 }
 .pong{
   position: absolute;
-  background-image: url(../ping-pong.jpg);
-  width: 22rem;
-  height: 20rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  bottom: 15vh;
-  right: 2vw;
+  cursor: pointer;
+    background-image: url(../ping-pong.jpg);
+    width: 23.6rem;
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 6vh;
+    right: 1vw;
 }
+
