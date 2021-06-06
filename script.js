@@ -1,5 +1,5 @@
 let names = ["Mindset is everything!","Patience Perseverence Excellence", "One day at a time.", "Start now!"
-,"Live & let Live!", "Remember why you started.", "Limitations are in your mind.","You are unique."];
+,"Live & let Live!", "Never quit!", "Train your mind.","You are unique."];
 let idx = 0;
 let word = names[idx];
 let text = "";
